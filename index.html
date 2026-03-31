@@ -474,8 +474,23 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
+                <style>
+                    .bounce-text {
+                        display: inline-block;
+                        animation: bounceUpDown 1s ease-in-out infinite;
+                    }
+
+                    @keyframes bounceUpDown {
+                        0%, 100% {
+                            transform: translateY(0);
+                        }
+                        50% {
+                            transform: translateY(-12px);
+                        }
+                    }
+                </style>
                 <h3 class="mbr-section-title mb-5 align-center mbr-fonts-style display-2">
-                    <strong>Coming Soon</strong>
+                    <strong class = "bounce-text">Coming Soon</strong>
                 </h3>
                 <h4 class="mbr-section-subtitle mb-5 align-center mbr-fonts-style display-7">
                     Use this block as a countdown for your project if it's not ready yet. Set the date in Block
